@@ -1,0 +1,224 @@
+<html>
+<title>Bankdonation</title>
+<head>
+<link rel="shortcut icon" href="sevabharti.ico">
+</head>
+<style type="text/css">
+
+body {
+	background-repeat: no-repeat;
+	}
+</style>
+<script type="text/javascript">
+
+function TableHeight() 
+{
+  if (typeof (window.innerWidth) == 'number') 
+  {
+    //Non-IE 
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  }
+  else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) 
+  {
+    //IE 6+ in 'standards compliant mode' 
+    myWidth = document.documentElement.clientWidth;
+    myHeight = document.documentElement.clientHeight;
+  }
+  else if (document.body && (document.body.clientWidth || document.body.clientHeight)) 
+  {
+    //IE 4 compatible 
+    myWidth = document.body.clientWidth;
+    myHeight = document.body.clientHeight;
+  }
+  document.getElementById('ctl00_TopPanel').style.height = (myHeight - 140) + 'px';
+}
+
+
+</script>
+<body bgcolor="#F5F5DC" oncontextmenu="return false">
+<h1><center><strong><font size="10px"><u>Donation</u></font></strong>
+    
+    
+    <img src="images/logo1.jpg" width="216" height="172" align="left"><img src="images/10.jpg" width="216" height="172" align="right">
+</center></h1>
+
+<form method="post" action="bankdonation.php"><br/><br/><br/><br/><br/><br/><br/><br/>
+      <tr><fieldset style="width:50%"><legend><strong>Donation Form</strong></legend>
+	<table border="0">
+	
+      <td>
+        <div>
+        <div>
+        <table><td><tr>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td>
+										<strong>Name*</strong>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="name" placeholder="enter name" required id="name"/>
+                                            </td>
+                                        </tr>	
+ <tr>
+                                            <td>
+                                       <strong>E-mail Id*</strong>
+                                            </td>
+                                            <td>
+                                               <input type="text" name="email" placeholder="yourname@email.com" required id="email"/>
+                                            </td>
+                                      </tr>
+ <tr>
+                                            <td>
+										<strong>Address*</strong>
+                                            </td>
+                                            <td>
+                                               <input type="text" name="address" placeholder="enter address" required id="address"/>
+                                            </td>
+                                      </tr>
+ <tr>
+                                            <td>
+										<strong>Contact No.*</strong>
+                                            </td>
+                                            <td>
+                                               <input type="text" name="cno" id="cno" placeholder="contact no." required maxlength="11"/>
+                                            </td>
+                                      </tr>
+										             <tr>
+                                            <td>
+										<strong>State*</strong>
+                                            </td>
+                                            <td>
+                                                <select name="state" onChange="javascript:setTimeout(&#39;__doPostBack(\&#39;State\&#39;,\&#39;\&#39;)&#39;, 0)" id="state" style="width:155px;">
+		<option selected="selected" value="Select State">Select State</option>
+		<option value="ANDAMAN AND NICOBAR ISLANDS">ANDAMAN AND NICOBAR ISLANDS</option>
+		<option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+		<option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+		<option value="ASSAM">ASSAM</option>
+		<option value="BIHAR">BIHAR</option>
+		<option value="CHANDIGARH">CHANDIGARH</option>
+		<option value="CHHATTISGARH">CHHATTISGARH</option>
+		<option value="DADRA AND NAGAR HAVELI">DADRA AND NAGAR HAVELI</option>
+		<option value="DAMAN AND DIU">DAMAN AND DIU</option>
+		<option value="DELHI">DELHI</option>
+		<option value="GOA">GOA</option>
+		<option value="GUJRAT">GUJRAT</option>
+		<option value="HARYANA">HARYANA</option>
+		<option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+		<option value="JAMMU AND KASHMIR">JAMMU AND KASHMIR</option>
+		<option value="JHARKHAND">JHARKHAND</option>
+		<option value="KARNATAKA">KARNATAKA</option>
+		<option value="KERALA">KERALA</option>
+		<option value="LAKSHADWEEP">LAKSHADWEEP</option>
+		<option value="MADHYA PRADESH">MADHYA PRADESH</option>
+		<option value="MAHARASHTRA">MAHARASHTRA</option>
+		<option value="MANIPUR">MANIPUR</option>
+		<option value="MEGHALAYA">MEGHALAYA</option>
+		<option value="MIZORAM">MIZORAM</option>
+		<option value="NAGALAND">NAGALAND</option>
+		<option value="ORISSA">ORISSA</option>
+		<option value="PONDICHERRY">PONDICHERRY</option>
+		<option value="PUNJAB">PUNJAB</option>
+		<option value="RAJASTHAN">RAJASTHAN</option>
+		<option value="SIKKIM">SIKKIM</option>
+		<option value="TAMIL NADU">TAMIL NADU</option>
+		<option value="TRIPURA">TRIPURA</option>
+		<option value="UTTARANCHAL">UTTARANCHAL</option>
+		<option value="UTTARPRADESH">UTTARPRADESH</option>
+		<option value="WEST BENGAL">WEST BENGAL</option>
+                <option value="Other">OTHER</option>
+                </select>
+                   </td>
+                                        </tr>
+                   <tr>
+                   <td>                     
+                <strong>Please specify your state</strong>
+                        </td><td>
+<input type="text" name="specify" >
+                                 </td>
+                            </tr>
+                         <tr>
+                              <td>
+                                  <strong>Select Branch name where you want to make donation*</strong>
+                              </td>
+                              <td><select name="branch" placeholder="enter branch name" required onChange="javascript:setTimeout(&#39;__doPostBack(\&#39;State\&#39;,\&#39;\&#39;)&#39;, 0)" id="branch" style="width:155px;">
+		<option selected="selected" value="Select Branch">Select Branch</option>
+		<option value="Bilaspur">Bilaspur</option>
+		<option value="Durg">Durg</option>
+		
+                                     
+                              </td>
+                         </tr>
+                               <tr>
+                                  <td>
+                                        <strong>Enter your bank name and branch<strong>
+                                  </td>
+                                  <td>
+                                       <input type="text" name="bank" id="bank" placeholder="enter bank" required  />
+                                  </td>
+                              </tr> 
+                            <tr>
+                                   <td>
+					<strong>Amount.*</strong>
+                                            </td>
+											<td>
+                                               <input type="text" name="amount" id="amount" placeholder="enter amount" required />in indian rupees
+                                            </td>
+						</tr>
+                          <tr>
+                                            <td>
+										<strong>Do You want receipt at your doorstep</strong>
+                                            </td>
+                                            <td>
+                                               <input type="text" name="receipt" id="receipt"/>
+                                            </td>
+                                      </tr>	
+						
+							
+							</table>
+						<tr>
+                        <td>
+                          <input type="submit" value="Submit" style="height:40px; width:150px"/>
+                          <input type="reset" value="Reset" style="height:40px; width:150px"/>  </td>
+						<td width="72" colspan="5000"><br></td>
+						</tr>
+
+<tr>
+ Note:- * mark fields are Mandatory fields
+    </tr>
+	
+	</table>
+</form>
+</fieldset><br/><br/>
+<font size="5px" color="red"><strong>Note:-</strong></font>You have to register here before making donation.<BR/>
+<table><ul><li><font size="3px">To donate in Durg Matruchhaya:-</font> </li><ul>
+                                      <li><strong>Bank Name:-Dena Bank</strong></li>
+                                      <li><strong>Account No.147310032145</strong></li>
+                                      <li><strong>IFSC No. BKDN 0821473</strong></ul></li></ul>
+<ul><li><font size="3px">To donate in Bilaspur Matruchhaya:-</font> </li><ul>
+                                      <li><strong>Bank Name:-Bank of Maharashtra</strong></li>
+                                      <li><strong>Account No.20152110136</strong></li>
+                                      <li><strong>IFSC No. MAHB 0000460</strong></ul></li>
+</ul>
+</table>
+</body>
+
+<SCRIPT language=JavaScript>
+	var message = "function disabled"; 
+	function rtclickcheck(keyp)
+	{ 
+		if (navigator.appName == "Netscape" && keyp.which == 30)
+		{ 
+			alert(message);
+			return false;
+		} 
+		if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 20) 
+		{ 	
+			alert(message); 	
+			return false;
+		} 
+	} 
+	document.onmousedown = rtclickcheck;
+</SCRIPT>
+</html> 
